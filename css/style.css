@@ -29,7 +29,11 @@
 		{
 			margin-right: auto;
 			font-family: glitt;
-			cursor: pointer;
+			cursor: pointer;\
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			font-size: 30px;
 		}
 		li a
 		{
@@ -41,4 +45,12 @@
 		{
 			padding: 0 5%;
 			font-size: 20px;
+		}
+		.p1
+		{
+			padding-left: 5%;
+			padding-right: 50%;
+			font-size: 17px;
+			text-align: justify;
+			text-justify: inter-word;
 		}
