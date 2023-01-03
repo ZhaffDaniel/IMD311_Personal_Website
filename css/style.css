@@ -5,13 +5,22 @@
 			box-sizing: border-box;
 			font-size: 13.5px;
 			font-family: tahoma;
-			background-color: #222126;
-			color: #edf0f1;
+			background-color: #020104;
+			color: #fcfcfd;
+		}
+		::selection
+		{
+			background: #242323;
 		}
 		@font-face
 		{
 			src: url("fonts/Glitten-Regular.otf");
 			font-family: glitt;
+		}
+		@font-face
+		{
+			src: url("fonts/Segaon-soft-black.otf");
+			font-family: sega;
 		}
 		.navigation
 		{
@@ -22,7 +31,7 @@
 		.navigation ul li
 		{
 			display: inline;
-			padding: 5px;
+			padding: 15px;
 			font-size: 15px;
 		}
 		.logo
@@ -41,6 +50,14 @@
 			list-style: none;
 			color: #edf0f1;
 		}
+		.navigation li a
+		{
+			transition: all 0.3s ease 0s;
+		}
+		.navigation li a:hover
+		{
+			color: #df0a10;
+		}
 		.section1
 		{
 			padding: 0 5%;
@@ -53,4 +70,12 @@
 			font-size: 17px;
 			text-align: justify;
 			text-justify: inter-word;
+		}
+		h1
+		{
+			font-family: sega;
+		}
+		p
+		{
+			color: #adacaf
 		}
