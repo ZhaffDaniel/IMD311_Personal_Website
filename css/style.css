@@ -38,11 +38,16 @@
 		{
 			margin-right: auto;
 			font-family: glitt;
-			cursor: pointer;\
+			cursor: pointer;
 			-webkit-user-select: none;
 			-ms-user-select: none;
 			user-select: none;
 			font-size: 30px;
+		}
+		.logo a
+		{
+			color: #fcfcfd;
+			text-decoration: none;
 		}
 		li a
 		{
@@ -78,4 +83,27 @@
 		p
 		{
 			color: #adacaf
+		}
+		.gallery1
+		{
+			margin-top: 50px;
+			margin-right: auto;
+			margin-left: auto;
+			display: flex;
+			width: 600px;
+			gap: 5px;
+		}
+		.gallery1 img
+		{
+			height: 350px;
+			flex: 1;
+			object-fit: cover;
+			object-position: center;
+			overflow: hidden;
+			transition: all 0.3s ease 0s;
+			cursor: pointer;
+		}
+		.gallery1 img:hover
+		{
+			flex: 4;
 		}
