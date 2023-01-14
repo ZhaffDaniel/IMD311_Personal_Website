@@ -4,8 +4,8 @@
 			padding: 0;
 			box-sizing: border-box;
 			font-size: 13.5px;
-			font-family: tahoma;
-			background-color: #020104;
+			font-family: 'Poppins', sans-serif;
+			background-color: #15171A;
 			color: #fcfcfd;
 		}
 		::selection
@@ -22,11 +22,18 @@
 			src: url("fonts/Segaon-soft-black.otf");
 			font-family: sega;
 		}
+		div
+		{
+			padding-left: 5%;
+			padding-right: 5%;
+		}
 		.navigation
 		{
 			display: flex;
 			align-items: center;
 			padding: 2px 5%;
+			background-color: #020104;
+			box-shadow: 0 0 20px rgb(0, 0, 0, 0.7);
 		}
 		.navigation ul li
 		{
@@ -49,11 +56,14 @@
 			color: #fcfcfd;
 			text-decoration: none;
 		}
-		li a
+		.navigation li a
 		{
 			text-decoration: none;
 			list-style: none;
-			color: #edf0f1;
+			color: #a0a0a0;
+			font-family: 'Poppins', sans-serif;
+			font-size: 14px;
+			position: relative;
 		}
 		.navigation li a
 		{
@@ -61,7 +71,22 @@
 		}
 		.navigation li a:hover
 		{
-			color: #df0a10;
+			color: #ffffff;
+		}
+		.navigation li a:after
+		{
+			content: "";
+			position: absolute;
+			background-color: #ff3c78;
+			width: 0px;
+			height: 2.5px;
+			top: -3.5px;
+			left: 0;
+			transition: all 0.3s ease 0s;
+		}
+		.navigation li a:hover:after
+		{
+			width:100%;
 		}
 		.section1
 		{
@@ -70,11 +95,27 @@
 		}
 		.p1
 		{
-			padding-left: 5%;
-			padding-right: 50%;
 			font-size: 17px;
 			text-align: justify;
 			text-justify: inter-word;
+			padding-top: 100px;
+			display: flex;
+			gap: 100px;
+		}
+		.p1 .pp1 b
+		{
+			font-family: sega;
+			font-size: 55px;
+			padding-bottom: 10px;
+			color: #ffffff;
+		}
+		.pp1
+		{
+			line-height: 30px;
+		}
+		.p1 img
+		{
+			cursor: pointer;
 		}
 		h1
 		{
@@ -90,8 +131,9 @@
 			margin-right: auto;
 			margin-left: auto;
 			display: flex;
-			width: 600px;
+			width: 700px;
 			gap: 5px;
+			padding-top: 20px;
 		}
 		.gallery1 img
 		{
@@ -106,4 +148,88 @@
 		.gallery1 img:hover
 		{
 			flex: 4;
+		}
+		.heading1
+		{
+			cursor: default;
+			font-size: 13.5px;
+			text-align: center;
+			font-family: tahoma;
+			font-weight: normal;
+		}
+		.welcome
+		{
+			line-height: 1px;
+		}
+		.welcomeword1
+		{
+			font-family: glitt;
+			font-size: 100px;
+		}
+		.welcomeword2
+		{
+			font-weight: normal;
+			padding-left: 2%;
+		}
+		#lightbox
+		{
+			position: fixed;
+			z-index: 1000;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgb(0, 0, 0, .8);
+			display: none;
+		}
+		#lightbox.active
+		{
+			display: flex;
+		}
+		#imagew
+		{
+			margin-right: 79%;
+			margin-left: 21%;
+		}
+		.edutable
+		{
+			margin: 25px 0;
+			margin-top: 100px;
+			margin-right: auto;
+			margin-left: auto;
+			border-collapse: collapse;
+			min-width: 400px;
+			padding: 15px 15px;
+			background-color: #15171A;
+			border-radius: 5px 5px 0 0 ;
+			overflow: hidden;
+			box-shadow: 0 0 20px rgb(255, 60, 120, 0.7);
+			transition: all 0.3s ease 0s;
+			cursor: default;
+		}
+		.edutable th
+		{
+			background-color: #ff3c78;
+			padding: 15px 15px;
+			color: white;
+		}
+		.edutable td
+		{
+			padding: 20px;
+		}
+		.edutable tbody tr
+		{
+			border-bottom: 1px solid #4F5154;
+			transition: all 0.3s ease 0s;
+		}
+		.edutable tbody tr:hover
+		{
+			color: #ff3c78;
+		}
+		.edutable tbody tr:nth-of-type(odd)
+		{
+			background-color: #2E3033;
+		}
+		.edutable tbody tr:last-of-type
+		{
+			border-bottom: 2px solid #ff3c78;
 		}
