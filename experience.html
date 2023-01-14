@@ -20,5 +20,40 @@
 		</ul>
 	</header>
 
+    <table class="table4">
+    	<tr class="logoSc">
+    		<td><img src="image/photo2.png" height="200" width="200"></td>
+    		<td><img src="image/photo8.jpeg" height="200" width="200"></td>
+    		<td><img src="image/drawing_6.png" height="200" width="200"></td>
+    	</tr>
+    	<tr class="SCd">
+    		<td>During highschool, I joined the Gamelan club of SMK Mak Lagam. During my time there I had met so many great people and had learned so much knowledge regarding the Gamelan as a traditional music intruments. We ended up participating in the state's Gamelan competition between other different highschools in the state. I'm proud to say that it had given me a new interest in learning more about writing music as a whole.</td>
+    		<td>After graduating highscool, I decided to work as a waiter at the Kopitiam Rosli on the outskirt of the city of Cukai. Although the experience was cutshort due to COVID saftey law enforcement, I did happen to enjoy working with one of my old friends there. From my short experience working as a waiter there, I can say that the working environment are great and supportive all thnings considered. What is guaranteed on the other hand is the salary given which I'm very grateful for.</td>
+    		<td>I had a lot of experience in pursuing creative projects form the past few years. Even though it was tough at first, learning new skills and creating an effective plan is very important for any kind of project. For the past few months, I have been taking my time to learn to draw, animating, as well as developing game on my free time and it has been a very fun time that I want to further go in depth sooner or later.</td>
+    	</tr>
+    </table>
+
 </body>
+<script>
+	const lightbox = document.createElement('div')
+	lightbox.id = 'lightbox'
+	document.body.appendChild(lightbox)
+
+	const images = document.querySelectorAll('img')
+	images.forEach(image => {
+		image.addEventListener('click', e => {
+			lightbox.classList.add('active')
+			const img = document.createElement('img')
+			img.src = image.src
+			while (lightbox.firstChild) {
+				lightbox.removeChild(lightbox.firstChild)
+			}
+			lightbox.appendChild(img)
+			img.id = 'imagew'
+		})
+	})
+	lightbox.addEventListener('click', e => {
+		lightbox.classList.remove('active')
+	})
+</script>
 </html>

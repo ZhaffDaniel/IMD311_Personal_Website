@@ -123,7 +123,7 @@
 		}
 		p
 		{
-			color: #adacaf
+			color: #adacaf;
 		}
 		.gallery1
 		{
@@ -157,20 +157,6 @@
 			font-family: tahoma;
 			font-weight: normal;
 		}
-		.welcome
-		{
-			line-height: 1px;
-		}
-		.welcomeword1
-		{
-			font-family: glitt;
-			font-size: 100px;
-		}
-		.welcomeword2
-		{
-			font-weight: normal;
-			padding-left: 2%;
-		}
 		#lightbox
 		{
 			position: fixed;
@@ -194,6 +180,7 @@
 		{
 			margin: 25px 0;
 			margin-top: 100px;
+			margin-bottom: 100px;
 			margin-right: auto;
 			margin-left: auto;
 			border-collapse: collapse;
@@ -232,4 +219,121 @@
 		.edutable tbody tr:last-of-type
 		{
 			border-bottom: 2px solid #ff3c78;
+		}
+		.contact-table
+		{
+			margin-top: 65px;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 15px 15px;
+			cursor: default;
+		}
+		.contact-table td
+		{
+			padding: 20px;
+			line-height: 20px;
+		}
+		.contact-table td:nth-of-type(even)
+		{
+			background-color: #2e3033;
+		}
+		.table3
+		{
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 100px;
+		}
+		.table3 td
+		{
+			text-align: center;
+			align-items: center;
+			align-content: center;
+			padding: 40px;
+		}
+		.table3 img
+		{
+			object-fit: contain;
+			cursor: pointer;
+		}
+		#imagey
+		{
+			margin-left: 29%;
+		}
+		.content p
+		{
+			font-size: 20px;
+			color: #adacaf;
+			padding-top: 20px;
+		}
+		.content
+		{
+			margin-left: 5%;
+			margin-top: 10%;
+		}
+		.content .btn
+		{
+			display: inline-block;
+			background: black;
+			border-radius: 100px;
+			padding: 10px 20px;
+			box-sizing: border-box;
+			text-decoration: none;
+			color: #adacaf;
+			box-shadow: none;
+			font-weight: bold;
+			font-size: 20px;
+			margin-top: 10px;
+			transition: all 0.3s ease 0s;
+			border: 2px solid #adacaf;
+		}
+		.content .btn:hover
+		{
+			box-shadow: 0 0 20px rgb(255, 60, 120);
+			color: black;
+			background-color: white;
+			border-color: white;
+		}
+		.feature-img
+		{
+			height: 88%;
+			position: absolute;
+			bottom: 0;
+			right:6%;
+		}
+		.content h1
+		{
+			font-size: 60px;
+			font-weight: 100;
+			margin-top: 24px;
+			margin-bottom: 15px;
+			font-family: glitt;
+			color: #ff3c78;
+			line-height: 30px;
+		}
+		.table4
+		{
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 100px;
+			border-top: 1px solid #020104;
+			border-collapse: collapse;
+			border-radius: 6px;
+		}
+		.table4 td
+		{
+			text-align: center;
+			align-items: center;
+			align-content: center;
+			padding: 40px;
+			background-color: #020104;
+			border-top: 1px solid #020104;
+			border-collapse: collapse;
+			border-radius: 6px;
+			max-width: 200px;
+			text-align: justify;
+		}
+		.table4 img
+		{
+			object-fit: cover;
+			cursor: pointer;
 		}

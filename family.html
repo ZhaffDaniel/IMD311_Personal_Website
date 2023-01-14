@@ -20,5 +20,34 @@
 		</ul>
 	</header>
 
+	<div class="p1">
+		<img src="image/photo7.png" width="300" height="300">
+		<p class="pp1"><b>BACKGROUND</b><br>
+			My family consists of six members: my parents, three siblings, and myself. We are a middle-class family from Kemaman, Terengganu. My mother is a stay-at-home mom, while my father works as an operations manager in the oil and gas industry. I am the oldest of three siblings, with one younger brother and two younger sisters.
+		</p>
+	</div>
+
 </body>
+<script>
+	const lightbox = document.createElement('div')
+	lightbox.id = 'lightbox'
+	document.body.appendChild(lightbox)
+
+	const images = document.querySelectorAll('img')
+	images.forEach(image => {
+		image.addEventListener('click', e => {
+			lightbox.classList.add('active')
+			const img = document.createElement('img')
+			img.src = image.src
+			while (lightbox.firstChild) {
+				lightbox.removeChild(lightbox.firstChild)
+			}
+			lightbox.appendChild(img)
+			img.id = 'imagey'
+		})
+	})
+	lightbox.addEventListener('click', e => {
+		lightbox.classList.remove('active')
+	})
+</script>
 </html>
